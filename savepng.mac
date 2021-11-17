@@ -1,0 +1,19 @@
+# Invoke the OpenGL visualization driver in its stored mode
+/vis/open OGL
+
+/vis/scene/create
+/vis/scene/add/userAction
+
+# Camera setting
+/vis/viewer/set/viewpointThetaPhi 100 40
+
+# Camera setting
+/vis/drawVolume
+/vis/viewer/flush
+
+# set print mode to vectored
+#/vis/ogl/set/printMode vectored
+
+# print
+/vis/ogl/set/exportFormat png
+/vis/ogl/export
