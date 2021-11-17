@@ -34,8 +34,8 @@ file(GLOB headers ${PROJECT_SOURCE_DIR}/include/*.hh)
 #----------------------------------------------------------------------------
 # Add the executable, and link it to the Geant4 libraries
 #
-add_executable(standalone standalone.cc ${sources} ${headers})
-target_link_libraries(standalone ${Geant4_LIBRARIES} ${ROOT_LIBRARIES})
+add_executable(eventdisplay standalone.cc ${sources} ${headers})
+target_link_libraries(eventdisplay ${Geant4_LIBRARIES} ${ROOT_LIBRARIES})
 
 #----------------------------------------------------------------------------
 # Copy all scripts to the build directory, i.e. the directory in which we
@@ -58,5 +58,5 @@ endforeach()
 #----------------------------------------------------------------------------
 # Install the executable to 'bin' directory under CMAKE_INSTALL_PREFIX
 #
-install(TARGETS standalone DESTINATION bin)
+install(TARGETS eventdisplay DESTINATION bin)
 
