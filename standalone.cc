@@ -48,7 +48,7 @@ int main(int argc,char** argv) {
   G4UIExecutive* ui = new G4UIExecutive(argc, argv);
 
   if (argc<3) {
-    std::cout << "Usage: eventdisplay [track_file] [event_number]";
+    std::cout << "Usage: eventdisplay [track_file] [event_number]" << std::endl;
     return -1;
   }
   std::string trackFile = argv[1];
